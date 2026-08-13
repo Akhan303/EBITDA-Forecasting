@@ -1,34 +1,46 @@
 # Probabilistic EBITDA Forecasting
 
-## Business Impact: Improved EBITDA predictability, enabling confident financial planning.
+> Executive decision-support portfolio project using synthetic data.
 
-### Project Overview
-This project develops a advanced forecasting system that moves beyond single-point estimates to probabilistic EBITDA forecasts with confidence intervals. By modeling underlying business drivers and using Monte Carlo simulation, it provides leadership with a complete view of potential financial outcomes.
+![Illustrative probabilistic forecast preview](docs/project-preview.png)
 
-### The S.T.A.R.
+## Business objective
 
-- **Situation**: EBITDA was highly volatile and difficult to forecast due to complex interactions between pricing, rebates, and cost fluctuations across the product portfolio.
-- **Task**: Develop a predictive model to accurately forecast EBITDA by capturing the underlying drivers of margin volatility.
-- **Action**:
-  - Feature-engineered data on price, cost, units, and customer segments
-  - Built time-series models (ARIMA) for key business drivers
-  - Performed Monte Carlo simulations to model uncertainty
-  - Generated scenario-based forecasts (best/worst case)
-- **Result**: Improved EBITDA predictability by 12%, giving leadership confidence in financial planning and the ability to proactively model pricing strategies.
+Move planning conversations beyond a single-point EBITDA forecast. The framework shows leadership a range of plausible outcomes, identifies the drivers creating uncertainty, and supports contingency planning before risks materialize.
 
-### Key Features
-- **Driver-Based Forecasting**: Models underlying business drivers (price, volume, cost) rather than just historical EBITDA
-- **Probabilistic Output**: Provides confidence intervals and scenario analysis
-- **Monte Carlo Simulation**: Runs 10,000+ simulations to quantify uncertainty
-- **Executive Visualizations**: Clear charts showing forecast ranges and risks
+## Executive questions supported
 
-### How to Run
-1. Install requirements: `pip install -r requirements.txt`
-2. Run the Jupyter notebook: `ebitda_forecasting.ipynb`
-3. The notebook will generate all forecasts and visualizations
+- What outcome range should leadership plan around?
+- Which price, volume, cost, and mix assumptions create the greatest risk?
+- How should management distinguish a base case from an upside or downside scenario?
+- Where should forecast governance and management attention be concentrated?
 
-### Technologies Used
-- Python (pandas, numpy)
-- Statistical Modeling (ARIMA, Linear Regression)
-- Monte Carlo Simulation
-- Data Visualization (matplotlib, seaborn, plotly)
+## Decision logic
+
+The notebook models underlying business drivers, develops time-series forecasts, and uses Monte Carlo simulation to translate uncertainty into an interpretable outcome range. The design emphasizes driver relationships, scenario transparency, and decision usefulness rather than a false sense of precision.
+
+## What the model produces
+
+- Driver-based forecasts for price, volume, and cost inputs
+- Probabilistic EBITDA ranges and confidence intervals
+- Base, upside, and downside scenario views
+- Visual separation of historical patterns and forward risk
+- A management framework for challenging assumptions
+
+## Governance and privacy
+
+This is a portfolio demonstration built entirely with synthetic data. It contains no employer, client, product, customer, transaction, budget, or forecast information. Results are illustrative and are not claims of actual forecast performance.
+
+## Run the notebook
+
+1. Install the packages in `requirements.txt`.
+2. Open `Probabilistic_EBITDA_Forecasting_Framework.ipynb`.
+3. Run the notebook from top to bottom to reproduce the model and visuals.
+
+## Technology and analytical methods
+
+Python, pandas, NumPy, ARIMA, linear regression, Monte Carlo simulation, matplotlib, seaborn, Plotly, driver-based planning, scenario analysis.
+
+---
+
+Created by [Aftab Khan](https://www.linkedin.com/in/aftabparvezkhan/) as part of a finance, data, and AI decision-intelligence portfolio.
